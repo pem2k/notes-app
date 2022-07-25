@@ -1,13 +1,14 @@
 const express = require("express");
-const router = express.router();
+const app = express()
+const router = express.Router();
 
 const getNotes = require("./get-controller.js")
-router.use("", getNotes)
+router.use("/notes", getNotes)
 
 const addNotes = require("./post-controller")
-router.use("", addNotes)
-
+router.use("/notes", addNotes)
+/*
 const delNotes = require("./delete-controller")
-router.use("", delNotes)
-
+router.use("/notes/:title", delNotes)
+*/
 module.exports = router;
