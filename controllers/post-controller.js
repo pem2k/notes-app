@@ -1,3 +1,4 @@
+const { randomUUID } = require("crypto");
 const express = require("express")
 const router = express.Router()
 const fs = require("fs")
@@ -6,6 +7,7 @@ let dataArr;
 
 router.post("/", (req,res) =>{
     const newNote = {
+        id: randomUUID(),
         title: req.body.title,
         text: req.body.text
     }
@@ -20,9 +22,6 @@ router.post("/", (req,res) =>{
         }
        })
     })
-  
-
-
 })
 
 

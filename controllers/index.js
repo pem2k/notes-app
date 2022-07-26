@@ -7,8 +7,8 @@ router.use("/notes", getNotes)
 
 const addNotes = require("./post-controller")
 router.use("/notes", addNotes)
-/*
+
 const delNotes = require("./delete-controller")
-router.use("/notes/:title", delNotes)
-*/
+router.use("/notes", delNotes)
+
 module.exports = router;
