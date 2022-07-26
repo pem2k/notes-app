@@ -27,7 +27,7 @@ You can visit [https://parkers-notes-app.herokuapp.com/](https://parkers-notes-a
 
 [https://parkers-notes-app.herokuapp.com/](https://parkers-notes-app.herokuapp.com/)
 
-![screenshot of notes-app](./assets/screenshot.png)
+[![screenshot of notes-app](./Assets/screenshot.png)]
 
 ## Credits
 
